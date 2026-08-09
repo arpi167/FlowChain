@@ -1,0 +1,3 @@
+# FlowChain datasets
+datasets/raw/*.csv
+datasets/cleaned/*.csv
