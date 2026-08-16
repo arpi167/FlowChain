@@ -146,41 +146,89 @@ SQL queries are stored in:
 
 ## 📈 Analytics & Business Intelligence
 
-FlowChain is designed to use Excel and Power BI to convert database results into business dashboards.
+FlowChain uses Microsoft Excel and Power BI to convert analytical results into business dashboards and decision-support views.
 
-### Planned KPIs
+### Dashboard Files
 
-- Total Products
-- Total Suppliers
+| Dashboard                    | File                              |
+| ---------------------------- | --------------------------------- |
+| Excel Analytics Dashboard    | `excel/FlowChain_Analysis.xlsx`   |
+| Power BI Analytics Dashboard | `powerbi/FlowChain_Analysis.pbix` |
+
+### Power BI Dashboard Pages
+
+The Power BI dashboard contains four analytical pages:
+
+1. **Executive Supply Chain Dashboard**
+2. **Sales & Profit Analysis**
+3. **Inventory & Supply Chain**
+4. **Demand Forecast**
+
+---
+
+## 📌 Key Performance Indicators
+
+The dashboards include key supply-chain and business KPIs such as:
+
+- Total Revenue
+- Total Profit
+- Total Units Sold
+- Average Profit Margin
 - Total Inventory
-- Low Stock Products
-- Pending Purchase Orders
-- Procurement Value
-- Supplier Performance
-- Warehouse Stock Distribution
+- Replenishment Orders
+- Stockout Monitoring
+- Average Forecast Error
 
-### Dashboard Areas
+---
 
-#### Inventory Overview
+## 📊 Dashboard Analysis
 
-- Current stock levels
-- Reorder alerts
-- Warehouse distribution
-- Stock availability
+### Executive Supply Chain Dashboard
 
-#### Procurement Overview
+Provides a high-level overview of the supply-chain operation through KPI cards.
 
-- Purchase order volume
-- Pending orders
-- Order status
-- Procurement value
+Key metrics include:
 
-#### Supplier Analysis
+- Total Revenue
+- Total Profit
+- Total Units Sold
+- Average Profit Margin
+- Total Inventory
+- Replenishment Orders
+- Stockout Monitoring
 
-- Supplier order volume
-- Supplier contribution
-- Delivery performance
-- Procurement value
+### Sales & Profit Analysis
+
+Analyzes business performance across warehouses, products, promotions, and regions.
+
+Visualizations include:
+
+- Warehouse Revenue vs Cost vs Profit
+- Promotion vs Non-Promotion Sales
+- Top 10 Most Profitable SKUs
+- Revenue by Region
+
+### Inventory & Supply Chain
+
+Focuses on inventory levels, replenishment activity, stock availability, and reorder thresholds.
+
+Visualizations include:
+
+- Inventory by Warehouse
+- Replenishment Orders by Warehouse
+- Low Stock Analysis
+- Inventory Level vs Reorder Point
+
+### Demand Forecast
+
+Provides forecasting-related analysis and forecast error monitoring.
+
+Visualizations include:
+
+- Forecast Demand Trend
+- Top 10 SKUs by Forecast Error
+- Forecast Error Trend
+- Average Forecast Error
 
 ---
 
@@ -192,9 +240,10 @@ Planned capabilities include:
 
 - Inventory reorder recommendations
 - Supplier performance analysis
-- Demand forecasting
+- Demand forecasting enhancements
 - Procurement risk detection
 - Stock-out risk identification
+- AI-assisted decision support
 
 These features will be developed incrementally after the core analytics layer is completed.
 
@@ -202,7 +251,7 @@ These features will be developed incrementally after the core analytics layer is
 
 ## 🐍 Python Analytics
 
-Python will be used for data preparation, analysis, and advanced analytics.
+Python is used for data preparation, analysis, and advanced analytics.
 
 ### Python Use Cases
 
@@ -250,7 +299,6 @@ Python will be used for data preparation, analysis, and advanced analytics.
 FlowChain/
 │
 ├── assets/
-│
 ├── datasets/
 │
 ├── docs/
@@ -262,8 +310,10 @@ FlowChain/
 │   └── 06_Architecture.drawio
 │
 ├── excel/
+│   └── FlowChain_Analysis.xlsx
 │
 ├── powerbi/
+│   └── FlowChain_Analysis.pbix
 │
 ├── python/
 │
@@ -338,16 +388,20 @@ FlowChain/
 - [x] System Architecture Diagram
 - [x] GitHub repository setup
 - [x] Project documentation
+- [x] Excel supply chain analytics dashboard
+- [x] Power BI supply chain analytics dashboard
+- [x] Executive KPI dashboard
+- [x] Sales & Profit Analysis dashboard
+- [x] Inventory & Supply Chain dashboard
+- [x] Demand Forecast dashboard
 
 ### In Progress
 
-- [ ] Dataset preparation
-- [ ] Python exploratory data analysis
-- [ ] Excel analytics
-- [ ] Power BI dashboard
-- [ ] Supplier performance analytics
-- [ ] Inventory analytics
-- [ ] Decision-support features
+- [ ] Advanced supplier performance analytics
+- [ ] Automated inventory reorder recommendations
+- [ ] Demand forecasting enhancements
+- [ ] Procurement risk detection
+- [ ] AI-assisted decision support
 
 ---
 
@@ -363,8 +417,12 @@ FlowChain/
 - Exploratory Data Analysis
 - KPI Development
 - Data Visualization
-- Power BI
-- Excel Analytics
+- Excel Dashboard Development
+- Power BI Dashboard Development
+- Supply Chain KPI Analysis
+- Forecast Error Analysis
+- Inventory & Replenishment Analytics
+- Business Intelligence Reporting
 - Python
 - Git & GitHub
 - Business Requirement Analysis
@@ -381,7 +439,8 @@ Key areas include:
 - Designed a relational supply chain database using PostgreSQL with interconnected entities.
 - Developed business-oriented SQL queries for inventory and procurement analysis.
 - Designed an ER model and system architecture for a supply chain analytics platform.
-- Planned KPI-driven dashboards using Power BI and Excel.
+- Built Excel and Power BI dashboards for supply-chain KPI and operational analysis.
+- Created dashboard views covering sales, profitability, inventory, replenishment, stockout monitoring, and demand forecasting.
 - Designed a roadmap for predictive and AI-assisted supply chain decision support.
 - Applied documentation and version-control practices using Git and GitHub.
 
@@ -392,13 +451,13 @@ Key areas include:
 Future versions of FlowChain may include:
 
 - Automated inventory reorder recommendations
-- Demand forecasting
+- Advanced demand forecasting
 - Supplier performance scoring
 - Procurement risk detection
 - Stock-out prediction
-- Interactive Power BI dashboards
 - Automated analytical reports
 - Machine learning-based decision support
+- AI-assisted supply chain recommendations
 
 ---
 
